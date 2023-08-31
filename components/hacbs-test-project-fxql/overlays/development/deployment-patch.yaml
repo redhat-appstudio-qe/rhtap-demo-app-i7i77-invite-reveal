@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-fxql
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-vjjm-tenant/rhtap-demo-app/hacbs-test-project-fxql@sha256:81fc9f65c40d1049b261af209e9626f431c8d2f9d4f3b27160ca57381ce57ea3
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
